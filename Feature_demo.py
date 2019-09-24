@@ -7,7 +7,7 @@ spark = SparkSession \
     .config("spark.some.config.option", "some-value") \
     .getOrCreate()
 
-from feature_engineering_package import *
+from feature_creation import *
 
 df = spark.read.orc("//hdfs location for the analytical data set using which features are to be created ")
 
